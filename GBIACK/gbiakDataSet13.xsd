@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gbiakDataSet13" targetNamespace="http://tempuri.org/gbiakDataSet13.xsd" xmlns:mstns="http://tempuri.org/gbiakDataSet13.xsd" xmlns="http://tempuri.org/gbiakDataSet13.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gbiakConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="gbiakConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GBIACK.Properties.Settings.GlobalReference.Default.gbiakConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="trackingTableAdapter" GeneratorDataComponentClassName="trackingTableAdapter" Name="tracking" UserDataComponentName="trackingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="gbiakConnectionString (Settings)" DbObjectName="gbiak.dbo.tracking" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT bednumber, cropsplanted, date FROM dbo.tracking</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="bednumber" DataSetColumn="bednumber" />
+              <Mapping SourceColumn="cropsplanted" DataSetColumn="cropsplanted" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="gbiakDataSet13" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="gbiakDataSet13" msprop:Generator_UserDSName="gbiakDataSet13">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tracking" msprop:Generator_TableClassName="trackingDataTable" msprop:Generator_TableVarName="tabletracking" msprop:Generator_TablePropName="tracking" msprop:Generator_RowDeletingName="trackingRowDeleting" msprop:Generator_RowChangingName="trackingRowChanging" msprop:Generator_RowEvHandlerName="trackingRowChangeEventHandler" msprop:Generator_RowDeletedName="trackingRowDeleted" msprop:Generator_UserTableName="tracking" msprop:Generator_RowChangedName="trackingRowChanged" msprop:Generator_RowEvArgName="trackingRowChangeEvent" msprop:Generator_RowClassName="trackingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bednumber" msprop:Generator_ColumnVarNameInTable="columnbednumber" msprop:Generator_ColumnPropNameInRow="bednumber" msprop:Generator_ColumnPropNameInTable="bednumberColumn" msprop:Generator_UserColumnName="bednumber" type="xs:int" minOccurs="0" />
+              <xs:element name="cropsplanted" msprop:Generator_ColumnVarNameInTable="columncropsplanted" msprop:Generator_ColumnPropNameInRow="cropsplanted" msprop:Generator_ColumnPropNameInTable="cropsplantedColumn" msprop:Generator_UserColumnName="cropsplanted" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

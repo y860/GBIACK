@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CB364C5-FB28-4AAA-B72F-A9E9E9EB8070}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GBIACK</RootNamespace>
+    <AssemblyName>GBIACK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gbiakDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gbiakDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="gbiakDataSet.xsc">
+      <DependentUpon>gbiakDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet.xss">
+      <DependentUpon>gbiakDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet1.xsc">
+      <DependentUpon>gbiakDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet1.xss">
+      <DependentUpon>gbiakDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet10.xsc">
+      <DependentUpon>gbiakDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet10.xss">
+      <DependentUpon>gbiakDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet11.xsc">
+      <DependentUpon>gbiakDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet11.xss">
+      <DependentUpon>gbiakDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet12.xsc">
+      <DependentUpon>gbiakDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet12.xss">
+      <DependentUpon>gbiakDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet13.xsc">
+      <DependentUpon>gbiakDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet13.xss">
+      <DependentUpon>gbiakDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet14.xsc">
+      <DependentUpon>gbiakDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet14.xss">
+      <DependentUpon>gbiakDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet2.xsc">
+      <DependentUpon>gbiakDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet2.xss">
+      <DependentUpon>gbiakDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet31.xsc">
+      <DependentUpon>gbiakDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet31.xss">
+      <DependentUpon>gbiakDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet4.xsc">
+      <DependentUpon>gbiakDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet4.xss">
+      <DependentUpon>gbiakDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet5.xsc">
+      <DependentUpon>gbiakDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet5.xss">
+      <DependentUpon>gbiakDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet6.xsc">
+      <DependentUpon>gbiakDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet6.xss">
+      <DependentUpon>gbiakDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet7.xsc">
+      <DependentUpon>gbiakDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet7.xss">
+      <DependentUpon>gbiakDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet8.xsc">
+      <DependentUpon>gbiakDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet8.xss">
+      <DependentUpon>gbiakDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet9.xsc">
+      <DependentUpon>gbiakDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="gbiakDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gbiakDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gbiakDataSet9.xss">
+      <DependentUpon>gbiakDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
